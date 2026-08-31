@@ -1,0 +1,19 @@
+.nathans-photo {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 100px;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+}
