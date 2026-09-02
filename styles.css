@@ -16,4 +16,24 @@ body {
 #intro {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+#github {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#contacts p {
+    margin: 0 0 6px;
+}
+
+#contacts #github p {
+    margin-bottom: 0;
+}
+
+#github-logo {
+    height: 20px;
+}
+
