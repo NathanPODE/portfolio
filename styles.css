@@ -25,6 +25,10 @@ body {
     gap: 5px;
 }
 
+#contacts h1 {
+    margin: 0 0 20px;
+}
+
 #contacts p {
     margin: 0 0 6px;
 }
@@ -37,3 +41,31 @@ body {
     height: 20px;
 }
 
+#info {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#about-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+#tools-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+#tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+}
