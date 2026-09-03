@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 #github {
@@ -44,7 +45,6 @@ body {
 #info {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
 }
 
 #about-section {
