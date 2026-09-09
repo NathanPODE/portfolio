@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+
+# Python compiled files
+__pycache__/
+*.pyc
+
+# Environment variables / secrets (for when we add the contact form)
+.env
+
+# OS-specific junk files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE folders
+.vscode/
+.idea/
