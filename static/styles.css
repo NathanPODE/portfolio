@@ -69,3 +69,8 @@ body {
     gap: 16px;
     width: 100%;
 }
+
+.skill-square {
+    animation: skill-flow 36s linear infinite;
+}
+
