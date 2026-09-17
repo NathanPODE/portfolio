@@ -13,7 +13,7 @@
             <h1>Nathan Odle</h1>
             <p class="contacts">mr.nathan.odle@gmail.com</p>
             <div id="github">
-                <img id="github-logo" src=" {{ url_for('static', filename='images/GitHub_Invertocat_Black.png')}}" alt="github logo">
+                <img id="github-logo" src=" {{ url_for('static', filename='images/GitHub_Invertocat_White.png')}}" alt="github logo">
                 <a href="https://github.com/NathanPODE" target="_blank" rel="noopener noreferrer" style="color: white;">
                     <p class="contacts">github.com/NathanPODE</p>
                 </a>
@@ -33,9 +33,15 @@
             <h2>Languages and Tools</h2>
             <div class="skill-flow">
                 <div class="skills-track">
-                    <div class="skill-square" style="animation-delay: 0s;">JS</div>
-                    <div class="skill-square" style="animation-delay: -2.94s;">Python</div>
-                    <div class="skill-square" style="animation-delay: -5.88s;">CSS</div>
+                    <div class="skill-square" style="animation-delay: 0s;"> 
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/js.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -2.94s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/python.png')}}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -5.88s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/css.png') }}">
+                    </div>
                     <div class="skill-square" style="animation-delay: -8.82s;">React</div>
                     <div class="skill-square" style="animation-delay: -11.76s;">Git</div>
                     <div class="skill-square" style="animation-delay: -14.71s;">SQL</div>
@@ -49,7 +55,9 @@
                     <div class="skill-square" style="animation-delay: -38.24s;">GitHub</div>
                     <div class="skill-square" style="animation-delay: -41.18s;">Node</div>
                     <div class="skill-square" style="animation-delay: -44.12s;">HTML</div>
-                    <div class="skill-square" style="animation-delay: -47.06s;">VS Code</div>
+                    <div class="skill-square" style="animation-delay: -47.06s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/vscode.png') }}">
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,20 +65,14 @@
 
     <h2 id="past-projects">Past Projects</h2>
     <div id="project-section">
-        
-        <a class="project-link" href="https://github.com/uhhitsnathan/comp380-group-project" target="blank" rel="noopener noreferrer">
-            <img class="project-photo" src="{{ url_for('static', filename='images/task-attacker.png')}}">
+        {% for project in projects %}
+        <a class="project-link" href="{{ project.link }}" target="blank" rel="noopener noreferrer">
+            <img class="project-photo" src="{{ url_for('static', filename= project.image)}}">
             <div class="project-body">
-                <h3 class="card-title">Task Attacker</h3>
+                <h3 class="card-title">{{ project.title }}</h3>
             </div>
         </a>
-
-         <a class="project-link" href="#">
-            <img class="project-photo" src="{{ url_for('static', filename='images/task-attacker.png')}}">
-            <div class="project-body">
-                <h3 class="card-title">This Website</h3>
-            </div>
-        </a>
+        {% endfor %}
     </div>
 
     <script src="{{ url_for('static', filename ='js/script.js') }}"></script>

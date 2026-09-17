@@ -4,16 +4,14 @@ app = Flask(__name__)
 
 projects = [
     {
-        "title": "Project One",
-        "description": "Desc",
-        "link": "link",
-        "image": "link",
+        "title": "Task Attacker",
+        "link": "https://github.com/uhhitsnathan/comp380-group-project",
+        "image": "images/task-attacker.png",
     },
     {
-        "title": "Project two",
-        "description": "Desc",
-        "link": "link",
-        "image": "link",
+        "title": "This Website",
+        "link": "https://github.com/NathanPODE/portfolio",
+        "image": "images/portfolio.png",
     },
 ]
 
