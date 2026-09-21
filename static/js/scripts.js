@@ -1,5 +1,15 @@
-const sqaures = document.querySelectorAll('.skill-square');
+const squares = document.querySelectorAll('.skill-square');
 const duration = 50;
-sqaures.forEach((sq, i) => {
-    sq.style.animationDelay = '-${(i/squares.length) * duration}s';
+squares.forEach((square, i) => {
+    square.style.animationDelay = `-${(i / squares.length) * duration}s`;
 });
+
+squares.forEach(square => {
+    square.addEventListener('mouseenter', () => {
+        document.body.classList.add('all-paused');
+    });
+
+    square.addEventListener('mouseleave', () => {
+        document.body.classList.remove('all-paused');
+    });
+})

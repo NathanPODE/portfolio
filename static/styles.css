@@ -94,6 +94,10 @@ body {
   animation: skill-flow 50s linear infinite;
 }
 
+body.all-paused .skill-square {
+    animation-play-state: paused;
+}
+
 .skills-track {
   position: relative;
   width: 100%;
@@ -132,7 +136,7 @@ body {
     flex-direction: column;
     width: 400px;
     height: 200px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 8px;
     overflow: hidden;
     text-decoration: none;
@@ -165,4 +169,12 @@ body {
     height: 100%;
     object-fit: contain;
     border-radius: 8px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
 }

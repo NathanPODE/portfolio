@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://googleapis.com">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>Nathan Odle's Portfolio</title>
 </head>
@@ -42,19 +43,45 @@
                     <div class="skill-square" style="animation-delay: -5.88s;">
                         <img class="tools-logo" src="{{ url_for('static', filename='images/css.png') }}">
                     </div>
-                    <div class="skill-square" style="animation-delay: -8.82s;">React</div>
-                    <div class="skill-square" style="animation-delay: -11.76s;">Git</div>
-                    <div class="skill-square" style="animation-delay: -14.71s;">SQL</div>
-                    <div class="skill-square" style="animation-delay: -17.65s;">MySQL</div>
-                    <div class="skill-square" style="animation-delay: -20.59s;">Postgres</div>
-                    <div class="skill-square" style="animation-delay: -23.53s;">Express</div>
-                    <div class="skill-square" style="animation-delay: -26.47s;">Flask</div>
-                    <div class="skill-square" style="animation-delay: -29.41s;">Java</div>
-                    <div class="skill-square" style="animation-delay: -32.35s;">C</div>
-                    <div class="skill-square" style="animation-delay: -35.29s;">C++</div>
-                    <div class="skill-square" style="animation-delay: -38.24s;">GitHub</div>
-                    <div class="skill-square" style="animation-delay: -41.18s;">Node</div>
-                    <div class="skill-square" style="animation-delay: -44.12s;">HTML</div>
+                    <div class="skill-square" style="animation-delay: -8.82s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/React.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -11.76s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/git.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -14.71s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/white-sql.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -17.65s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/mysql.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -20.59s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/postgres.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -23.53s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/white-express.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -26.47s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/white-flask.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -29.41s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/Java.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -32.35s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/C.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -35.29s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/c++.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -38.24s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/github-white.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -41.18s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/Nodejs.png') }}">
+                    </div>
+                    <div class="skill-square" style="animation-delay: -44.12s;">
+                        <img class="tools-logo" src="{{ url_for('static', filename='images/html.png') }}">
+                    </div>
                     <div class="skill-square" style="animation-delay: -47.06s;">
                         <img class="tools-logo" src="{{ url_for('static', filename='images/vscode.png') }}">
                     </div>
@@ -75,6 +102,6 @@
         {% endfor %}
     </div>
 
-    <script src="{{ url_for('static', filename ='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename ='js/scripts.js') }}"></script>
 </body>
 </html>
