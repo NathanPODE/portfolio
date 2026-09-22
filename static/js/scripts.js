@@ -1,5 +1,5 @@
 const squares = document.querySelectorAll('.skill-square');
-const duration = 50;
+const duration = 70;
 squares.forEach((square, i) => {
     square.style.animationDelay = `-${(i / squares.length) * duration}s`;
 });

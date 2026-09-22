@@ -4,6 +4,8 @@
     object-fit: cover;
     width: 200px;
     height: 200px;
+    min-width: 200px;
+    min-height: 200px;
     border-radius: 8px; 
 }
 
@@ -36,6 +38,7 @@ body {
 
 #contacts p {
     margin: 0 0 6px;
+    color: #808080;
 }
 
 #contacts #github p {
@@ -75,7 +78,7 @@ body {
 
 .skill-square {
   position: absolute;
-  border: 3px solid black;
+  border: 3px solid white;
   left: 0;
   top: 0;
   width: 48px;
@@ -84,18 +87,22 @@ body {
   padding: 10px;
   text-align: center;
   line-height: 1.1;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 8px;
   background: var(--your-bg-color);
   color: var(--your-text-color);
   offset-path: path("M320,220 L20,220 L20,120 L320,120 L320,20 L20,20 Z");
   offset-rotate: 0deg;
   transform: translate(-24px, -24px);
-  animation: skill-flow 50s linear infinite;
+  animation: skill-flow 70s linear infinite;
 }
 
 body.all-paused .skill-square {
     animation-play-state: paused;
+}
+
+.skill-square:hover {
+    z-index: 10;
 }
 
 .skills-track {
@@ -129,6 +136,7 @@ body.all-paused .skill-square {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 5%;
     justify-items: center;
+    padding-bottom: 50px;
 }
 
 .project-link {
@@ -178,3 +186,31 @@ h1 {
 h2 {
     font-size: 40px;
 }
+
+
+.skill-square .popup-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 15px;
+    
+    /* Position the popup text right above the cursor/text */
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.skill-square:hover .popup-text {
+    visibility: visible;
+    opacity: 1;
+}
+
