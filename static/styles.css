@@ -127,6 +127,7 @@ body.all-paused .skill-square {
   position: relative;
   width: 100%;
   height: 280px;
+    transform: translateX(42px);
 }
 
 @keyframes skill-flow {
