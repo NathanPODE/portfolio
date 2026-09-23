@@ -232,3 +232,59 @@ h2 {
     opacity: 1;
 }
 
+@media (max-width: 600px) {
+    body {
+        padding-top: 24px;
+    }
+
+    #intro {
+        gap: 12px;
+        padding-bottom: 36px;
+    }
+
+    .nathans-photo {
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        min-height: 120px;
+    }
+
+    #contacts {
+        min-width: 0;
+    }
+
+    #contacts h1 {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    #contacts p {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    #info {
+        flex-direction: column;
+        padding-bottom: 36px;
+    }
+
+    #about-section,
+    #tools-section {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #about-section {
+        margin-bottom: 36px;
+    }
+
+    #project-section {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .project-link {
+        width: 100%;
+    }
+}
+
